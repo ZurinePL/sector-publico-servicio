@@ -198,8 +198,10 @@
         <vann:usageNote xml:lang="en">Optional property. The possible values for this property are described in a controlled vocabulary (see NUTS taxonomy on http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&amp;StrNom=NUTS_22&amp;StrLanguageCode=EN&amp;IntPcKey=&amp;StrLayoutCode=HIERARCHIC).</vann:usageNote>
         <rdfs:comment xml:lang="es">Esta propiedad representa el nivel administrativo en el que opera una Organización Formal.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property represents the administrative level a particular Formal Organisation is operating on</rdfs:comment>
+        <rdfs:comment xml:lang="eu">Ezaugarri honek erakunde formal batek lantzen duen administrazio maila adierazten du</rdfs:comment>
         <rdfs:label xml:lang="en">Administrative level</rdfs:label>
         <rdfs:label xml:lang="es">Nivel administrativo</rdfs:label>
+        <rdfs:label xml:lang="eu">Administrazio maila</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -211,8 +213,10 @@
         <vann:usageNote xml:lang="en">Optional property. The possible values for this property are described in a controlled vocabulary (see European Publications Office&apos;s Currencies Names Authority List (NAL) on http://publications.europa.eu/mdr/authority/currency/index.html).</vann:usageNote>
         <rdfs:comment xml:lang="es">La propiedad Moneda representa la moneda en la que se debe pagar los costes asociados a un proceso o servicio.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed.</rdfs:comment>
+        <rdfs:comment xml:lang="eu">Txanpona ezaugarriak zerbitzu edo prozesu batekin zerikusia dituzten kostuak adierazten ditu.</rdfs:comment>
         <rdfs:label xml:lang="en">Currency</rdfs:label>
         <rdfs:label xml:lang="es">Moneda</rdfs:label>
+        <rdfs:label xml:lang="eu">Txanpona</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -232,7 +236,7 @@
         <vann:usageNote xml:lang="en">Optional property. The definition of the Rule class is very broad. In a typical case, the competent authority that provides the service will also define the rules that will implement its own policies. The CPSV-AP is flexible to allow for significant variation in such a scenario.</vann:usageNote>
         <rdfs:comment xml:lang="es">Esta propiedad enlaza un Servicio Público con la(s) regla(s) que rigen su funcionamiento.</rdfs:comment>
         <rdfs:comment xml:lang="en">The follows property links a Public Service to the Rule(s) under which it operates. </rdfs:comment>
-        <rdfs:label xml:lang="en">Follows</rdfs:label>
+        <rdfs:comment xml:lang="eu">Ezaugarri honek Zerbitzu Publiko bat eta bere funtzionamendua arautzen duten legeak elkarrekin jartzen ditu.</rdfs:comment><rdfs:label xml:lang="en">Follows</rdfs:label>
         <rdfs:label xml:lang="es">Sigue normativa</rdfs:label>
     </owl:ObjectProperty>
     
@@ -245,8 +249,10 @@
         <vann:usageNote xml:lang="en">Optional property.</vann:usageNote>
         <rdfs:comment xml:lang="es">Esta propiedad enlaza un Servicio Público con cualquier Canal a través del cual un Agente oferta, usa o interacciona con el servicio.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property links the Public Service to any Channel through which an Agent provides, uses or otherwise interacts with the Public Service.</rdfs:comment>
+        <rdfs:comment xml:lang="eu">Ezaugarri honek Zerbitzu Publiko bat elkartzen du Agente batek zerbitzua eskaintzen, erabiltzen edo elkarreragiten duen edozein Kanalekin.</rdfs:comment>
         <rdfs:label xml:lang="en">Has channel (e-mail, fax, homepage, telephone, assistant)</rdfs:label>
         <rdfs:label xml:lang="es">Tiene canal</rdfs:label>
+        <rdfs:label xml:lang="eu">Kanala dauka</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -256,10 +262,12 @@
     <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/hasCompetentAuthority">
         <rdfs:range rdf:resource="http://data.europa.eu/cv/PublicOrganisation"/>
         <vann:usageNote xml:lang="en">Mandatory property. Whether it provides the service directly or outsources it is not relevant, the Formal Organisation that is the Competent Authority of the service is the one that is ultimately responsible for managing and providing the service.</vann:usageNote>
-        <rdfs:comment xml:lang="es">Esta proipedad enlzada un Servicio Público con una Organización Pública, la cual es la  responsable de ofertar el servicio.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Esta proipedad enazada un Servicio Público con una Organización Pública, la cual es la  responsable de ofertar el servicio.</rdfs:comment>
         <rdfs:comment xml:lang="en">The Has Competent Authority property links a Public Service to a Public Organisation, which is the responsible agent for the delivery of the Public Service.</rdfs:comment>
+        <rdfs:comment xml:lang="eu">Ezaugarri honek Zerbitzu Publiko eta zerbitzua eskaintzen duen Erakunde Publikoa elkarrekin jartzen ditu.</rdfs:comment>
         <rdfs:label xml:lang="en">Has competent authority</rdfs:label>
         <rdfs:label xml:lang="es">Tiene autoridad competente</rdfs:label>
+        <rdfs:label xml:lang="eu">Agintarintza dauka</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -272,6 +280,7 @@
         <rdfs:comment xml:lang="es">Esta propiedad enlaza un Servicio Público to una o mas intancias de la clase Costo, indicando los costes relacionados con la ejecución de un Servicio Público para un ciudadno o negocio.</rdfs:comment>
         <rdfs:comment xml:lang="en">Indicates the cumulative costs related to the execution of the Public Services included in a particular Business Event.</rdfs:comment>
         <rdfs:comment xml:lang="en">The Has Cost property links a Public Service to one or more instances of the Cost class. It indicates the costs related to the execution of the Public Service by a citizen or a business. </rdfs:comment>
+        <rdfs:comment xml:lang="es">Esta propiedad enlaza un Servicio Público to una o mas intancias de la clase Costo, indicando los costes relacionados con la ejecución de un Servicio Público para un ciudadno o negocio.</rdfs:comment>
         <rdfs:label xml:lang="en">Has cost</rdfs:label>
         <rdfs:label xml:lang="es">Tiene costo</rdfs:label>
     </owl:ObjectProperty>
@@ -377,8 +386,7 @@
     <!-- http://data.europa.eu/cv/processingTime -->
 
     <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/processingTime"/>
-    
-
+ 
 
     <!-- http://data.europa.eu/cv/produces -->
 
